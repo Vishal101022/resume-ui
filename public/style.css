@@ -90,8 +90,8 @@ p {
   margin-top: 60px;
 }
 .date {
-    color: gray;
-    font-size: 0.9em;
+  color: gray;
+  font-size: 0.9em;
 }
 
 .degree::before {
@@ -115,7 +115,6 @@ p {
   margin-left: 5px;
 }
 
-
 .skills,
 .education {
   margin-top: 20px;
@@ -124,8 +123,8 @@ p {
   margin-top: 60px;
 }
 .skills ul {
-    list-style: none;
-} 
+  list-style: none;
+}
 
 li {
   margin-bottom: 10px;
@@ -134,7 +133,8 @@ li {
 .references {
   margin-top: 20px;
 }
-.work-experience ul, .references ul {
+.work-experience ul,
+.references ul {
   margin-left: 35px;
 }
 
@@ -150,15 +150,23 @@ li {
 .email {
   text-decoration: underline;
   letter-spacing: 1px;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
-
 @media (max-width: 768px) {
-    .name h1{
-      font-size: 1.5em !important;
-    }
- h2 {
-  font-size: 1.2em !important;
- }
- 
+  .name h1 {
+    font-size: 1.5em !important;
+  }
+  h2 {
+    font-size: 1.2em !important;
+  }
+  .header img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .header::before {
+    top: 95px !important;
+  }
 }
