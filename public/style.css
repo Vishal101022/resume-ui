@@ -70,12 +70,12 @@ body {
 .left-column {
   grid-area: 1/1/1/4;
   background-color: var(--secondary-color);
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 .right-column {
   grid-area: 1/4/1/8;
   background-color: #fff;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 h1 {
@@ -195,7 +195,7 @@ li {
   }
 
   .header::before {
-    top: 85px;
+    top: 80px;
   }
 
   .grid{
