@@ -195,7 +195,11 @@ li {
   }
 
   .header::before {
-    top: 90px;
+    top: 85px;
+  }
+
+  .grid{
+    gap: 0;
   }
 
   .left-column {
