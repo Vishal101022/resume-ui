@@ -19,14 +19,23 @@ body {
   background-color: var(--primary-color);
   color: var(--accent-color);
   display: flex;
-  justify-content: space-evenly;
+  gap: 1rem;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
+}
+
+/* .user-img {
+  margin-right: 6rem
+} */
+
+.user-name {
+  justify-content: end;
 }
 .header::before {
   content: "";
   position: absolute;
-  top: 111px;
+  top: calc(10% + 42px);
   left: 0;
   width: 40%;
   height: 50px;
@@ -34,7 +43,7 @@ body {
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
   rotate: 180deg;
 }
-.header img {
+.user-img img {
   width: 80px;
   height: 80px;
   border-radius: 50% 50%;
@@ -82,6 +91,12 @@ h1 {
   padding-bottom: 5px;
 }
 
+.contact-details h2,
+.education h2,
+.skills h2 {
+  margin-bottom: 10px;
+}
+
 p {
   margin: 5px 0;
 }
@@ -89,6 +104,7 @@ p {
 .contact-details {
   margin-top: 60px;
 }
+
 .date {
   color: gray;
   font-size: 0.9em;
@@ -148,12 +164,16 @@ li {
 }
 
 .email {
+  display: flex;
+  align-items: center;
+}
+
+.email p {
   text-decoration: underline;
-  letter-spacing: 1px;
-  text-wrap: balance;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
   white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -163,11 +183,18 @@ li {
   h2 {
     font-size: 1.2em !important;
   }
-  .header img {
+  .user-img img {
     width: 50px !important;
     height: 50px !important;
   }
+  .user-name h1 {
+    font-size: 1.5em !important;
+  }
+  .user-name p {
+    font-size: 0.8em !important;
+  }
+
   .header::before {
-    top: 95px !important;
+    top: calc(10% + 22px);
   }
 }
