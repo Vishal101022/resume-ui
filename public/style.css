@@ -35,7 +35,7 @@ body {
 .header::before {
   content: "";
   position: absolute;
-  top: calc(10% + 42px);
+  top: 111px;
   left: 0;
   width: 40%;
   height: 50px;
@@ -195,6 +195,14 @@ li {
   }
 
   .header::before {
-    top: calc(10% + 22px);
+    top: 90px;
+  }
+
+  .left-column {
+    padding: 0 0.5rem;
+  }
+
+  .right-column {
+    padding: 0 0.5rem;
   }
 }
