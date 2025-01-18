@@ -151,6 +151,7 @@ li {
   text-decoration: underline;
   letter-spacing: 1px;
   text-wrap: balance;
+  word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
 }
